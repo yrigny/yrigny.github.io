@@ -20,15 +20,44 @@
 
 		<div id="map" style="height: 400px;"></div>
 		<script>
-			var map = L.map('map').setView([0, 0], 2); // Centered at [lat, long]
+			var map = L.map('map').setView([35.8617, 104.1954], 4); // Centered on China
+		
+			// Add OpenStreetMap tiles
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 				attribution: '&copy; OpenStreetMap contributors'
 			}).addTo(map);
 		
-			// Add markers
-			L.marker([48.8566, 2.3522]).addTo(map).bindPopup("Paris, France");
-			L.marker([34.0522, -118.2437]).addTo(map).bindPopup("Los Angeles, USA");
+			// Add markers for specified locations
+			var locations = [
+				{ name: "Beijing, China", coords: [39.9042, 116.4074] },
+				{ name: "Tianjin, China", coords: [39.3434, 117.3616] },
+				{ name: "Shanghai, China", coords: [31.2304, 121.4737] },
+				{ name: "Guangzhou, China", coords: [23.1291, 113.2644] },
+				{ name: "Hong Kong, China", coords: [22.3193, 114.1694] },
+				{ name: "Macau, China", coords: [22.1987, 113.5439] },
+				{ name: "Chongqing, China", coords: [29.5630, 106.5516] },
+				{ name: "Chengdu, China", coords: [30.5728, 104.0668] },
+				{ name: "Wuhan, China", coords: [30.5928, 114.3055] },
+				{ name: "Changsha, China", coords: [28.2282, 112.9388] },
+				{ name: "Xining, China", coords: [36.6171, 101.7782] },
+				{ name: "Yinchuan, China", coords: [38.4872, 106.2309] },
+				{ name: "Lanzhou, China", coords: [36.0611, 103.8343] },
+				{ name: "Taipei, Taiwan", coords: [25.0330, 121.5654] },
+				{ name: "Tokyo, Japan", coords: [35.6895, 139.6917] },
+				{ name: "Kyoto, Japan", coords: [35.0116, 135.7681] },
+				{ name: "Osaka, Japan", coords: [34.6937, 135.5023] },
+				{ name: "Nara, Japan", coords: [34.6851, 135.8050] },
+				{ name: "Uji, Japan", coords: [34.8845, 135.7990] }
+			];
+		
+			// Add markers to the map
+			locations.forEach(location => {
+				L.marker(location.coords)
+					.addTo(map)
+					.bindPopup(location.name);
+			});
 		</script>
+		
 		
     </main>
 </body>
