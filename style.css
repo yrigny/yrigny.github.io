@@ -114,14 +114,8 @@ main {
 	border-radius: 15px;
 	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 	overflow: hidden;
-	transform: translateY(20px);
 	opacity: 0;
-	transition: all 0.6s ease;
-}
-
-.content-section.visible {
-	transform: translateY(0);
-	opacity: 1;
+	animation: fadeInUp 1s ease 0.4s forwards;
 }
 
 .section-header {

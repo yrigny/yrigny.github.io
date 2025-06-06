@@ -1,4 +1,18 @@
+
+function showSection(sectionId) {
+	if (sectionId === 'home') {
+		window.scrollTo(0, 0);
+	}
+	else if (sectionId === 'blog') {
+		document.getElementById('blogPosts').scrollIntoView({ behavior: 'smooth' });
+	}
+	else if (sectionId === 'projects') {
+		document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
+	}
+};
+
 document.addEventListener("DOMContentLoaded", () => {
+	showSection('home');
 	const blogPosts = [
 		{
 			title: "Building a Chatbot with Node.js",
