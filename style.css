@@ -276,39 +276,14 @@ main {
 	font-size: 0.8rem;
 }
 
-/* New Post Form */
-.form-group {
-	margin-bottom: 1rem;
-}
-
-.form-group label {
-	display: block;
-	margin-bottom: 0.5rem;
-	font-weight: 500;
-	color: #333;
-}
-
-.form-group input,
-.form-group textarea,
-.form-group select {
-	width: 100%;
-	padding: 0.75rem;
-	border: 2px solid #e9ecef;
-	border-radius: 8px;
-	font-size: 1rem;
-	transition: border-color 0.3s ease;
-}
-
-.form-group input:focus,
-.form-group textarea:focus,
-.form-group select:focus {
-	outline: none;
-	border-color: #667eea;
-}
-
-.form-group textarea {
-	resize: vertical;
-	min-height: 120px;
+/* Footer */
+footer {
+	background: rgba(255, 255, 255, 0.95);
+	backdrop-filter: blur(10px);
+	padding: 2rem 0;
+	text-align: center;
+	color: #666;
+	margin-top: 3rem;
 }
 
 .hidden {

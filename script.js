@@ -4,10 +4,10 @@ function showSection(sectionId) {
 		window.scrollTo(0, 0);
 	}
 	else if (sectionId === 'blog') {
-		document.getElementById('blogPosts').scrollIntoView({ behavior: 'smooth' });
+		document.getElementById('blog-section').scrollIntoView({ behavior: 'smooth' });
 	}
 	else if (sectionId === 'projects') {
-		document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
+		document.getElementById('projects-section').scrollIntoView({ behavior: 'smooth' });
 	}
 };
 
