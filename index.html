@@ -1,66 +1,55 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Yifan Rigny - Tech Blog & Portfolio</title>
+	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Website</h1>
-        <nav>
-            <a href="cv.html">CV</a>
-            <a href="photography.html">Photography</a>
-            <a href="https://github.com/yrigny" target="_blank">GitHub</a>
-        </nav>
-    </header>
-    <main>
-        <p>Hello! I’m a Computer Science student with a passion for music, movies, photography and travelling.</p>
+	<header>
+		<nav class="container">
+			<div class="logo">yrigny.dev</div>
+			<ul class="nav-links">
+				<li><a href="#home" onclick="showSection('home')">Home</a></li>
+				<li><a href="#blog" onclick="showSection('blog')">Blog</a></li>
+				<li><a href="#projects" onclick="showSection('projects')">Projects</a></li>
+			</ul>
+		</nav>
+	</header>
 
-		<div id="map" style="height: 400px;"></div>
-		<script>
-			var map = L.map('map').setView([35.8617, 104.1954], 4); // Centered on China
-		
-			// Add OpenStreetMap tiles
-			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-				attribution: '&copy; OpenStreetMap contributors'
-			}).addTo(map);
-		
-			// Add markers for specified locations
-			var locations = [
-				{ name: "Beijing, China", coords: [39.9042, 116.4074] },
-				{ name: "Tianjin, China", coords: [39.3434, 117.3616] },
-				{ name: "Shanghai, China", coords: [31.2304, 121.4737] },
-				{ name: "Guangzhou, China", coords: [23.1291, 113.2644] },
-				{ name: "Hong Kong, China", coords: [22.3193, 114.1694] },
-				{ name: "Macau, China", coords: [22.1987, 113.5439] },
-				{ name: "Chongqing, China", coords: [29.5630, 106.5516] },
-				{ name: "Chengdu, China", coords: [30.5728, 104.0668] },
-				{ name: "Wuhan, China", coords: [30.5928, 114.3055] },
-				{ name: "Changsha, China", coords: [28.2282, 112.9388] },
-				{ name: "Xining, China", coords: [36.6171, 101.7782] },
-				{ name: "Yinchuan, China", coords: [38.4872, 106.2309] },
-				{ name: "Lanzhou, China", coords: [36.0611, 103.8343] },
-				{ name: "Taipei, Taiwan", coords: [25.0330, 121.5654] },
-				{ name: "Tokyo, Japan", coords: [35.6895, 139.6917] },
-				{ name: "Kyoto, Japan", coords: [35.0116, 135.7681] },
-				{ name: "Osaka, Japan", coords: [34.6937, 135.5023] },
-				{ name: "Nara, Japan", coords: [34.6851, 135.8050] },
-				{ name: "Uji, Japan", coords: [34.8845, 135.7990] }
-			];
-		
-			// Add markers to the map
-			locations.forEach(location => {
-				L.marker(location.coords)
-					.addTo(map)
-					.bindPopup(location.name);
-			});
-		</script>
-		
-		
-    </main>
+	<main class="container">
+		<!-- Hero Section -->
+		<section id="home" class="hero">
+			<h1>Welcome to My Tech Journey</h1>
+			<p>Exploring the world of computer science, sharing insights, and building cool things along the way.</p>
+		</section>
+
+		<!-- Blog Section -->
+		<section id="blog-section" class="content-section">
+			<div class="section-header">
+				<h2>💭 Tech Thoughts & Notes</h2>
+				<p>My collection of insights, learnings, and technical explorations</p>
+			</div>
+			<div class="section-content">
+				<div id="blogPosts">
+				</div>
+			</div>
+		</section>
+
+		<!-- Projects Section -->
+		<section id="projects-section" class="content-section">
+			<div class="section-header">
+				<h2>🚀 Project Showcase</h2>
+				<p>A collection of my coding adventures and technical experiments</p>
+			</div>
+			<div class="section-content">
+				<div class="projects-grid" id="projectsGrid">
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<script src="script.js"></script>
 </body>
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2NE1IlWBwhEomzik47VZDV?utm_source=generator&theme=0" width="50%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
 </html>
