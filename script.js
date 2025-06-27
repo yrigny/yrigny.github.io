@@ -15,12 +15,12 @@ document.addEventListener("DOMContentLoaded", () => {
 	showSection('home');
 	const blogPosts = [
 		{
-			title: "Building a Chatbot with Node.js",
-			link: "https://medium.com/@yrigny/building-a-chatbot-with-nodejs-example",
-			date: "May 20, 2025",
+			title: "Learning DFS with Stack: LeetCode 22 — Generate Parentheses",
+			link: "https://medium.com/@realyifandiao/learning-dfs-with-stack-leetcode-22-generate-parentheses-7e3f94efb568",
+			date: "June 27, 2025",
 			source: "Medium",
-			tags: ["AI", "JavaScript", "Chatbot"],
-			summary: "An overview of how I built a simple chatbot using Fastify and OpenAI's API, including deployment tips and code snippets."
+			tags: ["LeetCode", "Learning"],
+			summary: "This blog documents my learning process while solving LeetCode 22: Generate Parentheses, focusing on the Depth-First Search (DFS) approach using a stack implementation."
 		},
 		{
 			title: "Understanding Event Loop in JS",
