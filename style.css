@@ -80,7 +80,7 @@ nav {
 
 /* Main Content */
 main {
-	margin-top: 80px;
+	margin-top: 100px;
 	padding: 2rem 0;
 }
 
@@ -88,18 +88,18 @@ main {
 	text-align: center;
 	padding: 4rem 0;
 	color: white;
-	margin-bottom: 3rem;
+	margin-bottom: 0;
 }
 
 .hero h1 {
-	font-size: 3rem;
+	font-size: 2.5rem;
 	margin-bottom: 1rem;
 	opacity: 0;
 	animation: fadeInUp 1s ease forwards;
 }
 
 .hero p {
-	font-size: 1.2rem;
+	font-size: 1rem;
 	opacity: 0.9;
 	max-width: 600px;
 	margin: 0 auto;
@@ -107,10 +107,48 @@ main {
 	animation: fadeInUp 1s ease 0.2s forwards;
 }
 
+.social-links {
+	display: flex;
+	justify-content: center;
+	gap: 1.5rem;
+	margin-top: 2rem;
+	opacity: 0;
+	animation: fadeInUp 1s ease 0.4s forwards;
+}
+
+.social-links a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50px;
+	height: 50px;
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 50%;
+	color: white;
+	text-decoration: none;
+	transition: all 0.3s ease;
+	backdrop-filter: blur(10px);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.social-links a:hover {
+	background: rgba(255, 255, 255, 0.2);
+	transform: translateY(-3px);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.social-links svg {
+	transition: transform 0.3s ease;
+}
+
+.social-links a:hover svg {
+	transform: scale(1.1);
+}
+
 /* Content Sections */
 .content-section {
 	background: white;
-	margin: 2rem 0;
+	margin: 0 0 2rem 0;
 	border-radius: 15px;
 	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 	overflow: hidden;
@@ -308,8 +346,16 @@ footer {
 		gap: 1rem;
 	}
 
+	main {
+		margin-top: 90px;
+	}
+
 	.hero h1 {
-		font-size: 2rem;
+		font-size: 1.8rem;
+	}
+
+	.hero p {
+		font-size: 0.9rem;
 	}
 
 	.blog-controls {
