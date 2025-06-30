@@ -23,20 +23,20 @@ document.addEventListener("DOMContentLoaded", () => {
 			summary: "This blog documents my learning process while solving LeetCode 22: Generate Parentheses, focusing on the Depth-First Search (DFS) approach using a stack implementation."
 		},
 		{
+			title: "Hackathon Reflections: Banque de France AI",
+			link: "https://medium.com/@realyifandiao/reflections-on-the-2025-banque-de-france-ai-hackathon-931f46b10fb5",
+			date: "June 14, 2025",
+			source: "Medium",
+			tags: ["Hackathon", "AI", "Reflections"],
+			summary: "Some takeaways and thoughts after winning the 2nd prize in the 2025 Banque de France AI Hackathon. What went well, and what I'd do differently."
+		},
+				{
 			title: "Understanding Event Loop in JS",
 			link: "https://hashnode.com/post/event-loop-in-js-explained",
 			date: "April 12, 2025",
 			source: "Hashnode",
 			tags: ["JavaScript", "Asynchronous"],
 			summary: "This article breaks down how JavaScript handles concurrency, with visuals and real-world analogies to demystify the event loop."
-		},
-		{
-			title: "Hackathon Reflections: Banque de France AI",
-			link: "https://notion.so/yrigny/banque-ai-hackathon-retrospective",
-			date: "June 14, 2025",
-			source: "Notion",
-			tags: ["Hackathon", "AI", "Reflections"],
-			summary: "Some takeaways and thoughts after competing in the 2025 Banque de France AI Hackathon. What went well, and what I'd do differently."
 		}
 	];
 
