@@ -253,7 +253,7 @@ main {
 /* Projects */
 .projects-grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-template-columns: repeat(2, 1fr);
 	gap: 2rem;
 }
 
@@ -265,6 +265,9 @@ main {
 	transition: all 0.3s ease;
 	position: relative;
 	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
 }
 
 .project-card::before {
@@ -296,6 +299,19 @@ main {
 .project-card h3 {
 	color: #333;
 	margin-bottom: 1rem;
+	font-size: 1.4rem;
+}
+
+.project-description {
+	flex-grow: 1;
+	margin-bottom: 1.5rem;
+}
+
+.project-description p {
+	color: #555;
+	line-height: 1.6;
+	text-align: left;
+	font-size: 0.95rem;
 }
 
 .project-tech {
@@ -312,6 +328,32 @@ main {
 	padding: 0.3rem 0.8rem;
 	border-radius: 15px;
 	font-size: 0.8rem;
+}
+
+.project-links {
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+	margin-top: auto;
+}
+
+.project-btn {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 0.6rem 1.2rem;
+	font-size: 0.9rem;
+	text-decoration: none;
+	border-radius: 20px;
+	transition: all 0.3s ease;
+	flex: 1;
+	justify-content: center;
+	max-width: 120px;
+}
+
+.project-btn svg {
+	width: 16px;
+	height: 16px;
 }
 
 /* Footer */
@@ -356,6 +398,20 @@ footer {
 
 	.hero p {
 		font-size: 0.9rem;
+	}
+
+	.projects-grid {
+		grid-template-columns: 1fr;
+		gap: 1.5rem;
+	}
+
+	.project-links {
+		flex-direction: column;
+		gap: 0.8rem;
+	}
+
+	.project-btn {
+		max-width: none;
 	}
 
 	.blog-controls {
