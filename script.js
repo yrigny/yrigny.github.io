@@ -15,6 +15,14 @@ document.addEventListener("DOMContentLoaded", () => {
 	showSection('home');
 	const blogPosts = [
 		{
+			title: "Deploy An App on AWS EC2 with GitHub Actions — from A to Z",
+			link: "https://medium.com/@realyifandiao/my-first-app-deployment-on-aws-ec2-with-github-actions-from-a-to-z-1a9e3d850b2d",
+			date: "July 4, 2025",
+			source: "Medium",
+			tags: ["AWS", "CI/CD", "GitHub Actions"],
+			summary: "A hands-on walkthrough of my first Dockerized web app deployment on AWS EC2 using GitHub Actions — from setting up DNS and CI/CD to securing with TLS and NGINX reverse proxy. Real issues, real fixes, real learning."
+		},
+		{
 			title: "Learning DFS with Stack: LeetCode 22 — Generate Parentheses",
 			link: "https://medium.com/@realyifandiao/learning-dfs-with-stack-leetcode-22-generate-parentheses-7e3f94efb568",
 			date: "June 27, 2025",
@@ -29,14 +37,6 @@ document.addEventListener("DOMContentLoaded", () => {
 			source: "Medium",
 			tags: ["Hackathon", "AI", "Reflections"],
 			summary: "Some takeaways and thoughts after winning the 2nd prize in the 2025 Banque de France AI Hackathon. What went well, and what I'd do differently."
-		},
-				{
-			title: "Understanding Event Loop in JS",
-			link: "https://hashnode.com/post/event-loop-in-js-explained",
-			date: "April 12, 2025",
-			source: "Hashnode",
-			tags: ["JavaScript", "Asynchronous"],
-			summary: "This article breaks down how JavaScript handles concurrency, with visuals and real-world analogies to demystify the event loop."
 		}
 	];
 
@@ -69,8 +69,8 @@ document.addEventListener("DOMContentLoaded", () => {
 			postEl.innerHTML = `
 				<h3><a href="${post.link}" target="_blank" rel="noopener noreferrer">${post.title}</a></h3>
 				<div class="blog-meta">
-					<span>🗓️ ${post.date}</span> posted on 
-					<span>📝 ${post.source}</span>
+					<span>${post.date}</span> posted on 
+					<span>${post.source}</span>
 				</div>
 				<div class="blog-meta">
 					${post.tags.map(tag => `<span class="tag">${tag}</span>`).join("")}
