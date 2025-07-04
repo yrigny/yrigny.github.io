@@ -5,10 +5,13 @@
 }
 
 body {
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-family: "Inter", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
 	line-height: 1.6;
-	color: #333;
-	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	color: #e0e0e0;
+	background: #1a1a1a;
 	min-height: 100vh;
 }
 
@@ -20,13 +23,14 @@ body {
 
 /* Header */
 header {
-	background: rgba(255, 255, 255, 0.95);
+	background: rgba(30, 30, 30, 0.95);
 	backdrop-filter: blur(10px);
 	position: fixed;
 	top: 0;
 	width: 100%;
 	z-index: 1000;
-	box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 nav {
@@ -39,9 +43,7 @@ nav {
 .logo {
 	font-size: 1.5rem;
 	font-weight: bold;
-	background: linear-gradient(45deg, #667eea, #764ba2);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	color: #4a9eff;
 }
 
 .nav-links {
@@ -52,14 +54,14 @@ nav {
 
 .nav-links a {
 	text-decoration: none;
-	color: #333;
+	color: #e0e0e0;
 	font-weight: 500;
 	transition: all 0.3s ease;
 	position: relative;
 }
 
 .nav-links a:hover {
-	color: #667eea;
+	color: #4a9eff;
 	transform: translateY(-2px);
 }
 
@@ -70,7 +72,7 @@ nav {
 	height: 2px;
 	bottom: -5px;
 	left: 0;
-	background: linear-gradient(45deg, #667eea, #764ba2);
+	background: #4a9eff;
 	transition: width 0.3s ease;
 }
 
@@ -122,19 +124,19 @@ main {
 	justify-content: center;
 	width: 50px;
 	height: 50px;
-	background: rgba(255, 255, 255, 0.1);
-	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.05);
+	border-radius: 8px;
 	color: white;
 	text-decoration: none;
 	transition: all 0.3s ease;
 	backdrop-filter: blur(10px);
-	border: 1px solid rgba(255, 255, 255, 0.2);
+	border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .social-links a:hover {
-	background: rgba(255, 255, 255, 0.2);
+	background: rgba(74, 158, 255, 0.2);
 	transform: translateY(-3px);
-	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 10px 20px rgba(74, 158, 255, 0.2);
 }
 
 .social-links svg {
@@ -147,20 +149,17 @@ main {
 
 /* Content Sections */
 .content-section {
-	background: white;
 	margin: 0 0 2rem 0;
-	border-radius: 15px;
-	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 	overflow: hidden;
 	opacity: 0;
 	animation: fadeInUp 1s ease 0.4s forwards;
 }
 
 .section-header {
-	background: linear-gradient(135deg, #667eea, #764ba2);
 	color: white;
 	padding: 2rem;
 	text-align: center;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .section-header h2 {
@@ -181,11 +180,11 @@ main {
 }
 
 .btn {
-	background: linear-gradient(45deg, #667eea, #764ba2);
+	background: #4a9eff;
 	color: white;
 	border: none;
 	padding: 0.75rem 1.5rem;
-	border-radius: 25px;
+	border-radius: 6px;
 	cursor: pointer;
 	font-weight: 500;
 	transition: all 0.3s ease;
@@ -194,26 +193,27 @@ main {
 }
 
 .btn:hover {
+	background: #3b8ae6;
 	transform: translateY(-2px);
-	box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+	box-shadow: 0 5px 15px rgba(74, 158, 255, 0.3);
 }
 
 .blog-post {
-	background: #f8f9fa;
-	border-radius: 10px;
+	background: #333;
+	border-radius: 6px;
 	padding: 1.5rem;
 	margin-bottom: 1.5rem;
-	border-left: 4px solid #667eea;
+	border-left: 4px solid #4a9eff;
 	transition: all 0.3s ease;
 }
 
 .blog-post:hover {
 	transform: translateX(5px);
-	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .blog-post h3 {
-	color: #333;
+	color: #e0e0e0;
 	margin-bottom: 0.5rem;
 	font-size: 1.3rem;
 }
@@ -225,11 +225,11 @@ main {
 }
 
 .blog-post h3 a:hover {
-	color: #667eea;
+	color: #4a9eff;
 }
 
 .blog-meta {
-	color: #666;
+	color: #b0b0b0;
 	font-size: 0.9rem;
 	margin-bottom: 1rem;
 	display: flex;
@@ -238,15 +238,15 @@ main {
 }
 
 .tag {
-	background: #667eea;
+	background: #4a9eff;
 	color: white;
 	padding: 0.2rem 0.8rem;
-	border-radius: 15px;
+	border-radius: 4px;
 	font-size: 0.8rem;
 }
 
 .blog-post p {
-	color: #555;
+	color: #c0c0c0;
 	line-height: 1.7;
 }
 
@@ -258,8 +258,8 @@ main {
 }
 
 .project-card {
-	background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-	border-radius: 15px;
+	background: #2a2a2a;
+	border-radius: 8px;
 	padding: 2rem;
 	text-align: center;
 	transition: all 0.3s ease;
@@ -268,47 +268,33 @@ main {
 	display: flex;
 	flex-direction: column;
 	height: 100%;
-}
-
-.project-card::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: -100%;
-	width: 100%;
-	height: 100%;
-	background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
-	transition: left 0.5s ease;
-}
-
-.project-card:hover::before {
-	left: 100%;
+	border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .project-card:hover {
 	transform: translateY(-10px);
-	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+	border-color: rgba(74, 158, 255, 0.3);
 }
 
 .project-icon {
 	font-size: 3rem;
 	margin-bottom: 1rem;
-	color: #667eea;
+	color: #4a9eff;
 }
 
 .project-card h3 {
-	color: #333;
+	color: #e0e0e0;
 	margin-bottom: 1rem;
 	font-size: 1.4rem;
 }
 
 .project-description {
 	flex-grow: 1;
-	margin-bottom: 1.5rem;
 }
 
 .project-description p {
-	color: #555;
+	color: #c0c0c0;
 	line-height: 1.6;
 	text-align: left;
 	font-size: 0.95rem;
@@ -323,10 +309,8 @@ main {
 }
 
 .tech-tag {
-	background: #667eea;
-	color: white;
-	padding: 0.3rem 0.8rem;
-	border-radius: 15px;
+	color: #4a9eff;
+	padding: 0.05rem 0.2rem;
 	font-size: 0.8rem;
 }
 
@@ -344,11 +328,19 @@ main {
 	padding: 0.6rem 1.2rem;
 	font-size: 0.9rem;
 	text-decoration: none;
-	border-radius: 20px;
+	border-radius: 6px;
 	transition: all 0.3s ease;
 	flex: 1;
 	justify-content: center;
 	max-width: 120px;
+	background: #4a9eff;
+	color: white;
+}
+
+.project-btn:hover {
+	background: #3b8ae6;
+	transform: translateY(-2px);
+	box-shadow: 0 5px 15px rgba(74, 158, 255, 0.3);
 }
 
 .project-btn svg {
@@ -358,12 +350,16 @@ main {
 
 /* Footer */
 footer {
-	background: rgba(255, 255, 255, 0.95);
-	backdrop-filter: blur(10px);
-	padding: 2rem 0;
+	font-size: 0.9rem;
+	font-weight: 200;
 	text-align: center;
-	color: #666;
+	color: #b0b0b0;
 	margin-top: 3rem;
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer p {
+	padding: 10px;
 }
 
 .hidden {
