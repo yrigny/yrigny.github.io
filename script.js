@@ -15,6 +15,14 @@ document.addEventListener("DOMContentLoaded", () => {
 	showSection('home');
 	const blogPosts = [
 		{
+			title: "React Hooks & Patterns: A Practical Study Note",
+			link: "https://medium.com/@realyifandiao/react-hooks-patterns-a-practical-study-note-1d67c28c1f82",
+			date: "September 16, 2025",
+			source: "Medium",
+			tags: ["React", "JavaScript", "Frontend"],
+			summary: "A collection of notes I took while studying the Meta React specialization on Coursera. It covers the challenges I encountered during the learning process, the underlying technical principles, and the solutions I applied to overcome them."
+		},
+		{
 			title: "Deploy An App on AWS EC2 with GitHub Actions — from A to Z",
 			link: "https://medium.com/@realyifandiao/my-first-app-deployment-on-aws-ec2-with-github-actions-from-a-to-z-1a9e3d850b2d",
 			date: "July 4, 2025",
