@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			summary: "This blog documents my learning process while solving LeetCode 22: Generate Parentheses, focusing on the Depth-First Search (DFS) approach using a stack implementation."
 		},
 		{
-			title: "Hackathon Reflections: Banque de France AI",
+			title: "Hackathon Reflections: Banque de France AI Lab",
 			link: "https://medium.com/@realyifandiao/reflections-on-the-2025-banque-de-france-ai-hackathon-931f46b10fb5",
 			date: "June 14, 2025",
 			source: "Medium",
